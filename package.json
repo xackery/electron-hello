@@ -1,0 +1,27 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Just hello world for electron",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xackery/electron-hello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xackery/electron-hello/issues"
+  },
+  "homepage": "https://github.com/xackery/electron-hello#readme",
+  "devDependencies": {
+    "electron": "^9.0.4",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5"
+  }
+}
