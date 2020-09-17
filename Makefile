@@ -5,3 +5,9 @@ npm-install:
 sandbox:
 	@cp src/assets/* dist/
 	@npm start
+.PHONY: build-all
+build-all:
+	@electron-packager ./ --out=bin/ --all
+.PHONY: build-windows
+build-windows:
+	@electron-packager . hello  --platform=win32 --arch=x64
